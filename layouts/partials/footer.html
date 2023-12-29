@@ -6,8 +6,11 @@
         {{- partial "socialIcons.html" site.Params.socialIcons -}}
     </div>
     <small class="footer_copyright">
-        © {{ now.Format "2006" }} {{ .Site.Params.author.name }}.
-        {{ T "footer.disclaimer" | safeHTML }}
+        © {{ now.Format "2006" }} - {{ .Site.Params.author.name }}. <br>
+        This site is made with <3 <br>
+        using ->  &nbsp;<a href="https://github.com/neovim/neovim" target="_blank">neovim</a> |
+        &nbsp;<a href="https://gohugo.io/" target="_blank">hugo</a> |
+        &nbsp;<a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank">hugo blog awesome</a>
     </small>
 </footer>
 
